@@ -226,7 +226,7 @@ checkmk_version: 1.6.0p19
 
 ## Dependencies
 
-* None
+* [rolehippie.docker](https://github.com/rolehippie/docker)
 
 ## License
 
