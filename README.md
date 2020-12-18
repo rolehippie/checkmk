@@ -95,7 +95,7 @@ List of default volumes to mount
 
 ```YAML
 checkmk_default_volumes:
-  - /var/lib/checkmk:/omd/sites
+  - /var/lib/checkmk:/opt/omd/sites
 ```
 
 ### checkmk_extra_folders

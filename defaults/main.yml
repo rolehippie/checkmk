@@ -48,7 +48,7 @@ checkmk_extra_folders: []
 
 # @var checkmk_default_volumes:description: List of default volumes to mount
 checkmk_default_volumes:
-  - /var/lib/checkmk:/omd/sites
+  - /var/lib/checkmk:/opt/omd/sites
 
 # @var checkmk_extra_volumes:description: List of extra volumes to mount
 # @var checkmk_extra_volumes:example: >
