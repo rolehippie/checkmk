@@ -1,4 +1,4 @@
-# Standards: 0.1
+# Standards: 1.2
 ---
 # @var checkmk_version:description: Version of CheckMK to use
 checkmk_version: 1.6.0p19
