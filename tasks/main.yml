@@ -6,7 +6,6 @@
     path: "{{ item }}"
     owner: root
     group: root
-    recurse: True
     state: directory
   tags:
     - checkmk
