@@ -1,0 +1,37 @@
+[Unit]
+Description=CheckMK
+
+Wants=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=10s
+EnvironmentFile=/etc/environment
+
+ExecStop=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker stop %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker kill %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps -a | /bin/grep %p 1> /dev/null && /usr/bin/docker rm %p || true'
+ExecStartPre=/usr/bin/docker pull {{ checkmk_image }}
+ExecStart=/usr/bin/docker run --rm \
+  --name %p \
+  --hostname %p \
+  --ulimit nofile=1024 \
+{% for item in checkmk_default_labels + checkmk_extra_labels %}
+  --label {{ item }} \
+{% endfor %}
+  --env-file /etc/default/checkmk \
+{% if checkmk_network | default(False) %}
+  --network {{ checkmk_network }} \
+{% endif %}
+  --volume /etc/localtime:/etc/localtime:ro \
+{% for item in checkmk_default_volumes + checkmk_extra_volumes %}
+  --volume {{ item }} \
+{% endfor %}
+{% for item in checkmk_default_publish + checkmk_extra_publish %}
+  --publish {{ item }} \
+{% endfor %}
+  {{ checkmk_image }}
+
+[Install]
+WantedBy=multi-user.target

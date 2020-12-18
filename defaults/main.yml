@@ -1,0 +1,74 @@
+# Standards: 0.1
+---
+# @var checkmk_version:description: Version of CheckMK to use
+checkmk_version: 1.6.0p19
+
+# @var checkmk_image:description: Docker image to use for deployment
+checkmk_image: "checkmk/check-mk-raw:{{ checkmk_version }}"
+
+# @var checkmk_network:description: Optionally assign this Docker network to container
+checkmk_network:
+
+# @var checkmk_default_publish:description: List of default port publishing
+# @var checkmk_default_publish:example: >
+# checkmk_default_publish:
+#   - 127.0.0.1:5000:5000
+#   - 127.0.0.1:6557:6557
+# @end
+checkmk_default_publish:
+  - 5000:5000
+  - 6557:6557
+
+# @var checkmk_extra_publish:description: List of extra port publishing
+# @var checkmk_extra_publish:example: >
+# checkmk_extra_publish:
+#   - 8080:8080
+#   - 127.0.0.1:9000:9000
+# @end
+checkmk_extra_publish: []
+
+# @var checkmk_default_labels:description: List of default labels to assign to docker command
+checkmk_default_labels: []
+
+# @var checkmk_extra_labels:description: List of extra labels to assign to docker command
+checkmk_extra_labels: []
+
+# @var checkmk_default_folders:description: List of default folders to create
+checkmk_default_folders:
+  - /var/lib/checkmk
+
+# @var checkmk_extra_folders:description: List of extra folders to create
+# @var checkmk_extra_folders:example: >
+# checkmk_extra_folders:
+#   - /path/to/host/folder1
+#   - /path/to/host/folder2
+#   - /path/to/host/folder3
+# @end
+checkmk_extra_folders: []
+
+# @var checkmk_default_volumes:description: List of default volumes to mount
+checkmk_default_volumes:
+  - /var/lib/checkmk:/omd/sites
+
+# @var checkmk_extra_volumes:description: List of extra volumes to mount
+# @var checkmk_extra_volumes:example: >
+# checkmk_extra_volumes:
+#   - /path/to/host/folder1:/path/within/container1
+#   - /path/to/host/folder2:/path/within/container2
+#   - /path/to/host/folder3:/path/within/container3
+# @end
+checkmk_extra_volumes: []
+
+# @var checkmk_mail_relay_host:description: Host of an SMTP relay server
+checkmk_mail_relay_host:
+
+# @var checkmk_site_id:description: Site name of the CheckMK server
+checkmk_site_id:
+
+# @var checkmk_admin_password:description: Password for the admin user
+checkmk_admin_password:
+
+# @var checkmk_livestatus_tcp:description: Enable livestatus via TCP
+checkmk_livestatus_tcp: True
+
+...
