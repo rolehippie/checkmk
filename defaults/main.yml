@@ -1,7 +1,6 @@
 # Standards: 1.2
 ---
 # @var checkmk_version:description: Version of CheckMK to use
-# renovate: datasource=docker depName=checkmk/check-mk-raw versioning=loose
 checkmk_version: 1.6.0p19
 
 # @var checkmk_image:description: Docker image to use for deployment
