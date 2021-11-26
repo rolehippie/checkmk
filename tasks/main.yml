@@ -6,6 +6,7 @@
     path: "{{ item }}"
     owner: root
     group: root
+    mode: u=rwx,g=rx,o=rx
     state: directory
   tags:
     - checkmk
@@ -16,6 +17,9 @@
   template:
     src: default.j2
     dest: /etc/default/checkmk
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - checkmk
 
@@ -25,6 +29,9 @@
   template:
     src: service.j2
     dest: /etc/systemd/system/checkmk.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - checkmk
 
