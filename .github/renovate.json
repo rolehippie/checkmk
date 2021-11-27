@@ -28,7 +28,8 @@
             "matchDatasources": [
                 "github-releases",
                 "github-tags",
-                "galaxy-collection"
+                "galaxy-collection",
+                "docker"
             ],
             "matchUpdateTypes": [
                 "major"
@@ -42,7 +43,8 @@
             "matchDatasources": [
                 "github-releases",
                 "github-tags",
-                "galaxy-collection"
+                "galaxy-collection",
+                "docker"
             ],
             "matchUpdateTypes": [
                 "minor"
@@ -56,7 +58,8 @@
             "matchDatasources": [
                 "github-releases",
                 "github-tags",
-                "galaxy-collection"
+                "galaxy-collection",
+                "docker"
             ],
             "matchUpdateTypes": [
                 "patch"
