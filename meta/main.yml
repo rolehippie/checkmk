@@ -20,6 +20,8 @@
 # [rolehippie.docker](https://github.com/rolehippie/docker)
 # @end
 galaxy_info:
+  role_name: checkmk
+  namespace: rolehippie
   author: Thomas Boerger
   description: Ansible role to install CheckMK server or satellite
   license: Apache-2.0
