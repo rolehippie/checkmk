@@ -1,36 +1,37 @@
 # checkmk
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/checkmk) [![Testing Build](https://github.com/rolehippie/checkmk/workflows/testing/badge.svg)](https://github.com/rolehippie/checkmk/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/checkmk/workflows/readme/badge.svg)](https://github.com/rolehippie/checkmk/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/checkmk/workflows/galaxy/badge.svg)](https://github.com/rolehippie/checkmk/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/checkmk)](https://github.com/rolehippie/checkmk/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/checkmk) [![Testing Build](https://github.com/rolehippie/checkmk/workflows/testing/badge.svg)](https://github.com/rolehippie/checkmk/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/checkmk/workflows/readme/badge.svg)](https://github.com/rolehippie/checkmk/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/checkmk/workflows/galaxy/badge.svg)](https://github.com/rolehippie/checkmk/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/checkmk)](https://github.com/rolehippie/checkmk/blob/master/LICENSE)
 
-Ansible role to install CheckMK server or satellite. 
+Ansible role to install CheckMK server or satellite.
 
-## Sponsor 
+## Sponsor
 
-[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
 
 Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
-* [Default Variables](#default-variables)
-  * [checkmk_admin_password](#checkmk_admin_password)
-  * [checkmk_default_folders](#checkmk_default_folders)
-  * [checkmk_default_labels](#checkmk_default_labels)
-  * [checkmk_default_publish](#checkmk_default_publish)
-  * [checkmk_default_volumes](#checkmk_default_volumes)
-  * [checkmk_extra_folders](#checkmk_extra_folders)
-  * [checkmk_extra_labels](#checkmk_extra_labels)
-  * [checkmk_extra_publish](#checkmk_extra_publish)
-  * [checkmk_extra_volumes](#checkmk_extra_volumes)
-  * [checkmk_image](#checkmk_image)
-  * [checkmk_livestatus_tcp](#checkmk_livestatus_tcp)
-  * [checkmk_mail_relay_host](#checkmk_mail_relay_host)
-  * [checkmk_network](#checkmk_network)
-  * [checkmk_site_id](#checkmk_site_id)
-  * [checkmk_version](#checkmk_version)
-* [Dependencies](#dependencies)
-* [License](#license)
-* [Author](#author)
+- [Default Variables](#default-variables)
+  - [checkmk_admin_password](#checkmk_admin_password)
+  - [checkmk_default_folders](#checkmk_default_folders)
+  - [checkmk_default_labels](#checkmk_default_labels)
+  - [checkmk_default_publish](#checkmk_default_publish)
+  - [checkmk_default_volumes](#checkmk_default_volumes)
+  - [checkmk_extra_folders](#checkmk_extra_folders)
+  - [checkmk_extra_labels](#checkmk_extra_labels)
+  - [checkmk_extra_publish](#checkmk_extra_publish)
+  - [checkmk_extra_volumes](#checkmk_extra_volumes)
+  - [checkmk_image](#checkmk_image)
+  - [checkmk_livestatus_tcp](#checkmk_livestatus_tcp)
+  - [checkmk_mail_relay_host](#checkmk_mail_relay_host)
+  - [checkmk_network](#checkmk_network)
+  - [checkmk_site_id](#checkmk_site_id)
+  - [checkmk_version](#checkmk_version)
+- [Discovered Tags](#discovered-tags)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Author](#author)
 
 ---
 
@@ -221,12 +222,17 @@ Version of CheckMK to use
 #### Default value
 
 ```YAML
-checkmk_version: 1.6.0p19
+checkmk_version: 2.1.0-latest
 ```
+
+## Discovered Tags
+
+**_checkmk_**
+
 
 ## Dependencies
 
-* [rolehippie.docker](https://github.com/rolehippie/docker)
+- [rolehippie.docker](https://github.com/rolehippie/docker)
 
 ## License
 
