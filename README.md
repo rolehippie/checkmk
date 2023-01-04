@@ -231,7 +231,7 @@ Version of CheckMK to use
 #### Default value
 
 ```YAML
-checkmk_version: 2.1.0p18
+checkmk_version: 2.1.0-latest
 ```
 
 ## Discovered Tags
