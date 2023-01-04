@@ -2,7 +2,7 @@
 ---
 # @var checkmk_version:description: Version of CheckMK to use
 # renovate: datasource=docker depName=checkmk/check-mk-raw
-checkmk_version: 2.1.0p18
+checkmk_version: 2023.01.04
 
 # @var checkmk_image:description: Docker image to use for deployment
 checkmk_image: "checkmk/check-mk-raw:{{ checkmk_version }}"
