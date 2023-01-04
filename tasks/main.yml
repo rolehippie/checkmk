@@ -35,6 +35,14 @@
   tags:
     - checkmk
 
+- name: Pull docker image
+  when: checkmk_pull_image
+  docker_image:
+    name: "{{ checkmk_image }}"
+    source: pull
+  tags:
+    - checkmk
+
 - name: Start checkmk service
   systemd:
     name: checkmk
