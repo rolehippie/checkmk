@@ -1,0 +1,12 @@
+# Standards: 1.2
+---
+- name: Converge
+  hosts: all
+  vars:
+    checkmk_site_id: dummy
+    checkmk_admin_password: p455w0rd
+  roles:
+    - role: rolehippie.docker
+    - role: rolehippie.checkmk
+
+...
