@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/rolehippie/checkmk/compare/v1.0.0...v1.1.0) (2023-06-12)
+
+
+### Features
+
+* **deps:** update checkmk/check-mk-raw docker tag to v2.2.0 ([97ad010](https://github.com/rolehippie/checkmk/commit/97ad0102a30f16058bcbfad4d70455b795860d40))
+
 ## 1.0.0 (2023-01-04)
 
 
