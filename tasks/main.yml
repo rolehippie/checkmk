@@ -1,7 +1,7 @@
 ---
 - name: Create required directories
   loop: "{{ checkmk_default_folders + checkmk_extra_folders }}"
-  file:
+  ansible.builtin.file:
     path: "{{ item }}"
     owner: root
     group: root
@@ -13,7 +13,7 @@
 - name: Write default config
   notify:
     - Restart checkmk
-  template:
+  ansible.builtin.template:
     src: default.j2
     dest: /etc/default/checkmk
     owner: root
@@ -25,7 +25,7 @@
 - name: Write service file
   notify:
     - Restart checkmk
-  template:
+  ansible.builtin.template:
     src: service.j2
     dest: /etc/systemd/system/checkmk.service
     owner: root
@@ -36,14 +36,14 @@
 
 - name: Pull docker image
   when: checkmk_pull_image
-  docker_image:
+  community.docker.docker_image:
     name: "{{ checkmk_image }}"
     source: pull
   tags:
     - checkmk
 
 - name: Start checkmk service
-  systemd:
+  ansible.builtin.systemd:
     name: checkmk
     state: started
     daemon_reload: True
