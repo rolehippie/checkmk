@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/checkmk/compare/v1.1.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([f38e306](https://github.com/rolehippie/checkmk/commit/f38e306f7ec26fc5eb2c17eae29fd759778f88d4))
+* used full qualified collection names ([7fadae6](https://github.com/rolehippie/checkmk/commit/7fadae6b53052de1368d3576ae5056e238c0e6dd))
+
+
+### Bugfixes
+
+* remove meta requirements and document used collections ([7a81c8f](https://github.com/rolehippie/checkmk/commit/7a81c8f88561bda5e1181a67f2a2e349bfc93ddb))
+
 ## [1.1.0](https://github.com/rolehippie/checkmk/compare/v1.0.0...v1.1.0) (2023-06-12)
 
 
