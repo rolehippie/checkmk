@@ -7,7 +7,7 @@ checkmk_version: 2.4.0-latest
 checkmk_image: "checkmk/check-mk-raw:{{ checkmk_version }}"
 
 # @var checkmk_pull_image:description: Pull image as part of the tasks
-checkmk_pull_image: True
+checkmk_pull_image: true
 
 # @var checkmk_network:description: Optionally assign this Docker network to container
 checkmk_network:
@@ -72,6 +72,6 @@ checkmk_site_id:
 checkmk_admin_password:
 
 # @var checkmk_livestatus_tcp:description: Enable livestatus via TCP
-checkmk_livestatus_tcp: True
+checkmk_livestatus_tcp: true
 
 ...

@@ -35,10 +35,19 @@
     - checkmk
 
 - name: Pull docker image
-  when: checkmk_pull_image
+  when:
+    - checkmk_pull_image
   community.docker.docker_image:
     name: "{{ checkmk_image }}"
     source: pull
+  tags:
+    - checkmk
+
+- name: Create docker network
+  when:
+    - false if checkmk_network is none else (checkmk_network | length > 0)
+  community.docker.docker_network:
+    name: '{{ checkmk_network }}'
   tags:
     - checkmk
 
@@ -46,9 +55,9 @@
   ansible.builtin.systemd:
     name: checkmk
     state: started
-    daemon_reload: True
-    masked: False
-    enabled: True
+    daemon_reload: true
+    masked: false
+    enabled: true
   tags:
     - checkmk
 

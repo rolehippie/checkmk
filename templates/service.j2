@@ -21,7 +21,7 @@ ExecStart=/usr/bin/docker run --rm \
   --label {{ item }} \
 {% endfor %}
   --env-file /etc/default/checkmk \
-{% if checkmk_network | default(False) %}
+{% if checkmk_network | default(false) %}
   --network {{ checkmk_network }} \
 {% endif %}
   --volume /etc/localtime:/etc/localtime:ro \
