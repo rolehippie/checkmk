@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.0](https://github.com/rolehippie/checkmk/compare/v2.3.0...v3.0.0) (2025-11-10)
+
+
+### Features
+
+* **major:** update dependency community.docker to v5 ([#39](https://github.com/rolehippie/checkmk/issues/39)) ([d8bfdd3](https://github.com/rolehippie/checkmk/commit/d8bfdd31d17579751b8521dd6390a05ccdb30238))
+
 ## [2.3.0](https://github.com/rolehippie/checkmk/compare/v2.2.0...v2.3.0) (2025-09-18)
 
 
