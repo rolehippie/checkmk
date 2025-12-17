@@ -2,6 +2,8 @@
 - name: Converge
   hosts: all
   vars:
+    docker_daemon_config:
+      storage-driver: vfs
     checkmk_pull_image: false
     checkmk_site_id: dummy
     checkmk_admin_password: p455w0rd
