@@ -1,5 +1,34 @@
 # Changelog
 
+## [3.1.0](https://github.com/rolehippie/checkmk/compare/v3.0.0...v3.1.0) (2026-03-30)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.1.0,<5.2.0 ([#58](https://github.com/rolehippie/checkmk/issues/58)) ([9306c3e](https://github.com/rolehippie/checkmk/commit/9306c3e6c82e35aa03fd1c494ce9b71b63fbb380))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([1e1ec9d](https://github.com/rolehippie/checkmk/commit/1e1ec9de92996c85fb7cfd1c605c95b3d74b983b))
+* **flake:** updated lockfile [skip ci] ([f286095](https://github.com/rolehippie/checkmk/commit/f286095a21ea72abb65c8d73ecf335d0358e792a))
+* **flake:** updated lockfile [skip ci] ([2edde03](https://github.com/rolehippie/checkmk/commit/2edde03819e2120112c4679ae7651a6aa946abc9))
+* **flake:** updated lockfile [skip ci] ([d97876b](https://github.com/rolehippie/checkmk/commit/d97876b0f876ad68356d0ae4e19333434acef98f))
+* **flake:** updated lockfile [skip ci] ([2bc3e86](https://github.com/rolehippie/checkmk/commit/2bc3e86d1fec53d8ab1344aaf004ed352e9e11ef))
+* **flake:** updated lockfile [skip ci] ([3900f81](https://github.com/rolehippie/checkmk/commit/3900f81712ea4b5a783f94f1ba89cd1db9680e0b))
+* **flake:** updated lockfile [skip ci] ([306f627](https://github.com/rolehippie/checkmk/commit/306f627750173ed627e366f9ae16eac1c031390b))
+* **flake:** updated lockfile [skip ci] ([bf5204f](https://github.com/rolehippie/checkmk/commit/bf5204fe805feca38a7e8109bfa4e1ca95ea060b))
+* **flake:** updated lockfile [skip ci] ([ae3dfb2](https://github.com/rolehippie/checkmk/commit/ae3dfb2631d3f7d460c0a50e4a031e9439eb16fb))
+* **flake:** updated lockfile [skip ci] ([39d2880](https://github.com/rolehippie/checkmk/commit/39d288087d6fe03d73dff821b07e7c6d9aac099b))
+* **flake:** updated lockfile [skip ci] ([a547470](https://github.com/rolehippie/checkmk/commit/a54747039d0b36b1acf128bce9e67255fc6b3d7f))
+* **flake:** updated lockfile [skip ci] ([be9411b](https://github.com/rolehippie/checkmk/commit/be9411bda3ef470b46f21da8f6bf62a41109332c))
+* **flake:** updated lockfile [skip ci] ([c0f7129](https://github.com/rolehippie/checkmk/commit/c0f712951184ed8673f1e0acacb1f58aa0ea9067))
+* **flake:** updated lockfile [skip ci] ([9b23fc3](https://github.com/rolehippie/checkmk/commit/9b23fc38a0189843922ada737647bf9afaea600d))
+* **flake:** updated lockfile [skip ci] ([b5c48d3](https://github.com/rolehippie/checkmk/commit/b5c48d3990ab8ce26728c61d674821fd2bf21c43))
+* **flake:** updated lockfile [skip ci] ([f1ddff4](https://github.com/rolehippie/checkmk/commit/f1ddff4828da93d80678590ae9a89679d23a5ad6))
+* **flake:** updated lockfile [skip ci] ([6ea9fcc](https://github.com/rolehippie/checkmk/commit/6ea9fcc6adb032aaacc557139048f0a0cde8f25c))
+* **flake:** updated lockfile [skip ci] ([6fdeb85](https://github.com/rolehippie/checkmk/commit/6fdeb85c8de80bc88cf5470fdafdd94de5b378b9))
+* **flake:** updated lockfile [skip ci] ([c3322c9](https://github.com/rolehippie/checkmk/commit/c3322c98b46e84616fa9ee147d2f3d4b9d525215))
+* **flake:** updated lockfile [skip ci] ([4eb4774](https://github.com/rolehippie/checkmk/commit/4eb4774b6dc7cbeaa127ac2f253293f5a1888aaf))
+
 ## [3.0.0](https://github.com/rolehippie/checkmk/compare/v2.3.0...v3.0.0) (2025-11-10)
 
 
