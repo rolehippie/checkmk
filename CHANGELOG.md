@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.2.0](https://github.com/rolehippie/checkmk/compare/v3.1.0...v3.2.0) (2026-04-13)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.2.0,<5.3.0 ([#59](https://github.com/rolehippie/checkmk/issues/59)) ([66405d7](https://github.com/rolehippie/checkmk/commit/66405d792f1e100acfbbc9e3549f0ce36e959cb7))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([cff740f](https://github.com/rolehippie/checkmk/commit/cff740f38812d2ba0c6d7d5054186e36b2a7590c))
+* **flake:** updated lockfile [skip ci] ([e33985a](https://github.com/rolehippie/checkmk/commit/e33985a9b9f6024856e952d301c942f8d6f9ae28))
+
 ## [3.1.0](https://github.com/rolehippie/checkmk/compare/v3.0.0...v3.1.0) (2026-03-30)
 
 ### Dependencies
