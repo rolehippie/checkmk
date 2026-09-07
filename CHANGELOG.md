@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.7.0](https://github.com/rolehippie/checkmk/compare/v3.6.1...v3.7.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([667e198](https://github.com/rolehippie/checkmk/commit/667e1988d6268e600498b192ee92dadd241b5e52))
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.3.0,<5.4.0 ([#72](https://github.com/rolehippie/checkmk/issues/72)) ([c540334](https://github.com/rolehippie/checkmk/commit/c54033455c0e4900a4a26ea74caabe04df6b8cd2))
+
 ## [3.6.1](https://github.com/rolehippie/checkmk/compare/v3.6.0...v3.6.1) (2026-08-31)
 
 ### Dependencies
