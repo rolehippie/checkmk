@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.8.0](https://github.com/rolehippie/checkmk/compare/v3.7.0...v3.8.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.4.0,<5.5.0 ([#80](https://github.com/rolehippie/checkmk/issues/80)) ([e0e71ef](https://github.com/rolehippie/checkmk/commit/e0e71efeb6689630f61e6be6b632658b7e385eb4))
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#73](https://github.com/rolehippie/checkmk/issues/73)) ([775913c](https://github.com/rolehippie/checkmk/commit/775913c63ac59a77b7d2b7f650323aed146ab654))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#75](https://github.com/rolehippie/checkmk/issues/75)) ([5d74c44](https://github.com/rolehippie/checkmk/commit/5d74c4402f92732b88d20e09239704bad2ee85b1))
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#76](https://github.com/rolehippie/checkmk/issues/76)) ([13911a4](https://github.com/rolehippie/checkmk/commit/13911a41f726b9ff8deb50a999b5e836ae418bad))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#77](https://github.com/rolehippie/checkmk/issues/77)) ([4f256de](https://github.com/rolehippie/checkmk/commit/4f256de8b6471a566a30317973918890f49fc9b1))
+* **mise:** update dependency prek to v0.5.3 ([#74](https://github.com/rolehippie/checkmk/issues/74)) ([b462b1f](https://github.com/rolehippie/checkmk/commit/b462b1fcc7be02e9af7ff680a0ac5039d523ec48))
+* **mise:** update dependency prek to v0.5.4 ([#78](https://github.com/rolehippie/checkmk/issues/78)) ([5926098](https://github.com/rolehippie/checkmk/commit/592609850659dd98baa2e7e3570f7e8b98b96241))
+* **mise:** update dependency prek to v0.5.5 ([#81](https://github.com/rolehippie/checkmk/issues/81)) ([4ae2c95](https://github.com/rolehippie/checkmk/commit/4ae2c955c59c276db06e5de2c80e5312d7008833))
+
 ## [3.7.0](https://github.com/rolehippie/checkmk/compare/v3.6.1...v3.7.0) (2026-09-07)
 
 ### Features
